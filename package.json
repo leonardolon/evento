@@ -2,7 +2,6 @@
   "name": "evento",
   "version": "1.0.0",
   "description": "",
-  
   "scripts": {
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
     "build": "parcel build src/index.html",
@@ -13,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
-    "parcel": "^2.9.3"
+    "parcel": "^2.9.3",
+    "sharp": "^0.31.3"
   }
 }
