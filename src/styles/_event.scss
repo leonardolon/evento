@@ -1,0 +1,66 @@
+@use "_variaveis";
+
+.event {
+    padding: 80px 0; 
+    
+    &--start {
+        background-image: linear-gradient( variaveis.$branco, variaveis.$roxo);  
+    }
+
+    &--description {
+        background-image: linear-gradient( variaveis.$roxo, variaveis.$pink);  
+    }
+
+    &--event {
+        background-image: linear-gradient( variaveis.$pink, variaveis.$yellow);  
+    }
+
+    &--final {
+        background-image: linear-gradient( variaveis.$yellow, variaveis.$pink);  
+    }
+
+    &--image-left {
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image{
+        max-width: 360px;
+    }
+
+    &__datails {
+       
+
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            
+        }
+
+        &__description{            
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px){
+        .container{
+            display: block;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__datails {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}
